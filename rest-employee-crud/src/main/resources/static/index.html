@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap" rel="stylesheet">
+  <title>CRUD empleados</title>
+</head>
+<body>
+  <header>
+    <h1 class="primary-title">CRUD Empleados</h1>
+    
+  </header>
+
+  <main>
+      <section class="form-box">
+        <h2 class="form-title">Formulario</h2>
+        <div class="form-container">
+          <form action="" method="post" id="form">
+            <label for="nombre" class="lb-form">Nombre</label>
+            <br>
+            <input type="text" name="nombre" id="nombre" class="form-input" required>
+            <br>
+            <label for="apellido" class="lb-form">Apellido</label>
+            <br>
+            <input type="text" name="apellido" id="apellido" class="form-input" required>
+            <br>
+            <label for="edad" class="lb-form">Edad</label>
+            <br>
+            <input type="number" name="edad" id="edad" class="form-input" required>
+            <br>
+            <label for="salario" class="lb-form">Salario</label>
+            <br>
+            <input type="text" name="salario" id="salario" class="form-input" required>
+            <input type="hidden" name="id" id="id">
+            <div class="form-btns">
+              <input type="submit" class="form-btn"></input>
+              <input type="button" value="Limpiar" id="limpiar" class="form-btn">
+            </div>
+          </form>  
+        </div>
+      </section>
+      <section class="employees-list">
+        <table id="employees" class="employee-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Edad</th>
+              <th>Salario</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="body-table">
+          </tbody>
+        </table>
+      </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
